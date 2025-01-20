@@ -11,7 +11,7 @@ public class Watchlist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String userId;
+    private String  userId;
     private String movieId;
 
     // Getters and Setters

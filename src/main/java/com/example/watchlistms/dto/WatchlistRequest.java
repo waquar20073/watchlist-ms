@@ -1,7 +1,13 @@
 package com.example.watchlistms.dto;
 
+import jakarta.validation.constraints.NotNull;
+
 public class WatchlistRequest {
+
+    @NotNull(message = "userId cannot be null")
     private String userId;
+
+    @NotNull(message = "movieId cannot be null")
     private String movieId;
 
     // Getters and Setters
