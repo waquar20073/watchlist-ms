@@ -1,11 +1,11 @@
 package com.example.watchlistms.dto;
 
-public class WatchlistResponse {
+public class CartResponse {
 
     private String message;
-    private MovieResponse movie;
+    private ProductResponse movie;
 
-    public WatchlistResponse(String message, MovieResponse movie) {
+    public CartResponse(String message, ProductResponse movie) {
         this.message = message;
         this.movie = movie;
     }
@@ -19,11 +19,11 @@ public class WatchlistResponse {
         this.message = message;
     }
 
-    public MovieResponse getMovie() {
+    public ProductResponse getMovie() {
         return movie;
     }
 
-    public void setMovie(MovieResponse movie) {
+    public void setMovie(ProductResponse movie) {
         this.movie = movie;
     }
 }

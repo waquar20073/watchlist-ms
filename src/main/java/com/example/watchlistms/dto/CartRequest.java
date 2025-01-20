@@ -1,8 +1,8 @@
 package com.example.watchlistms.dto;
 
-public class WatchlistRequest {
+public class CartRequest {
     private String userId;
-    private String movieId;
+    private String productId;
 
     // Getters and Setters
     public String getUserId() {
@@ -13,11 +13,11 @@ public class WatchlistRequest {
         this.userId = userId;
     }
 
-    public String getMovieId() {
-        return movieId;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setMovieId(String movieId) {
-        this.movieId = movieId;
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
 }
