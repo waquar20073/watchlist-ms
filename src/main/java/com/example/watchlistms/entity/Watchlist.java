@@ -6,13 +6,18 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Cart {
+public class Watchlist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String userId;
-    private String productId;
+    private String movieId;
+
+    public Watchlist(String userId, String productId) {
+        this.userId = userId;
+        this.movieId = productId;
+    }
 
     public long getId() {
         return id;
@@ -30,11 +35,11 @@ public class Cart {
         this.userId = userId;
     }
 
-    public String getProductId() {
-        return productId;
+    public String getMovieId() {
+        return movieId;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
+    public void setMovieId(String productId) {
+        this.movieId = productId;
     }
 }
