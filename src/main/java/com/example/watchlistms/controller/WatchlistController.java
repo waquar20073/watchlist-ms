@@ -1,6 +1,5 @@
 package com.example.watchlistms.controller;
 
-import com.example.watchlistms.dto.WatchlistRequest;
 import com.example.watchlistms.service.WatchlistService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
