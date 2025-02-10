@@ -1,4 +1,4 @@
-package com.example.watchlistms.dto;
+package com.example.cartms.dto;
 
 public class ErrorResponseDto {
     private String message;
@@ -6,8 +6,7 @@ public class ErrorResponseDto {
     public ErrorResponseDto(String message) {
         this.message = message;
     }
-
-    // Getters and Setters
+    
     public String getMessage() {
         return message;
     }
