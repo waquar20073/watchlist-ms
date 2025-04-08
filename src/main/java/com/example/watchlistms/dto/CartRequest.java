@@ -3,6 +3,7 @@ package com.example.watchlistms.dto;
 public class CartRequest {
     private String userId;
     private String productId;
+    private int quantity;
 
     // Getters and Setters
     public String getUserId() {
@@ -19,5 +20,13 @@ public class CartRequest {
 
     public void setProductId(String productId) {
         this.productId = productId;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

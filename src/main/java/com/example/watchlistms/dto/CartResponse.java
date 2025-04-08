@@ -3,11 +3,11 @@ package com.example.watchlistms.dto;
 public class CartResponse {
 
     private String message;
-    private ProductResponse movie;
+    private int cost;
 
-    public CartResponse(String message, ProductResponse movie) {
+    public CartResponse(String message, int cost) {
         this.message = message;
-        this.movie = movie;
+        this.cost = cost;
     }
 
     // Getters and Setters
@@ -19,11 +19,12 @@ public class CartResponse {
         this.message = message;
     }
 
-    public ProductResponse getMovie() {
-        return movie;
+    public int getCost() {
+        return cost;
     }
 
-    public void setMovie(ProductResponse movie) {
-        this.movie = movie;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
+
 }
